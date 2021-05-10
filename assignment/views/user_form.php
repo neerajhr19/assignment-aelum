@@ -69,7 +69,7 @@
             <span id="captchaError" style="color: red;"></span>
         </div>
         <div class="col-md-6" style="margin-top:10px">
-            <img src="<?=base_url(); ?>assets/captcha/captcha.php" alt="CAPTCHA" class="captcha-image">
+            <img src="" id="capimg" alt="CAPTCHA" class="captcha-image" style="display: none;">
             <i class="fas fa-redo refresh-captcha refresh"></i>           
         </div>
     </div>
