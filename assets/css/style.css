@@ -1,0 +1,296 @@
+body, section {
+    float:left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.pd-0 {padding: 0px !important;}
+.bg-white {background: #fff;}
+.web-form {
+    float: left;
+    width: 100%;
+    background: black;
+    position: static;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.form {
+    width: 100%
+    margin: 0% auto;
+    padding: 0px 0px;
+}
+.border {
+    border: 2px solid #fff;
+    float: left;
+    width: 100%;
+    background: #808080;
+}
+.form form {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.form form h3 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 17px;
+    margin: 30px 0px 10px 0px;
+}
+.form form label {
+    color: #fff;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0px 0px 3px 0px;
+    text-align: left;
+    width: 100%;
+    float: left;
+}
+.form form .input {
+    margin: 7px 0px;
+    float: left;
+    width: 100%;
+    padding: 0px 50px;
+    text-align: center;
+}
+.form input, .form textarea {
+    padding: 10px 10px;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.form textarea {
+    min-height: 100px;
+}
+.form form .input button {
+    background: #6fa73f;
+    border: 1px solid #6fa73f;
+    color: #fff;
+    padding: 5px 15px;
+    margin: 30px 0px 0px 0px;
+}
+.img, .img img {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.engage {
+    float: left;
+    width: 100%;
+    margin: 0px;
+    position: relative;
+}
+.head {
+    margin: 50px 0px;
+    padding: 0px 0px 0px 20px;
+}
+.head h3 {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 0px;
+    line-height: 25px;
+    color: #000;
+}
+.apps {
+    text-align: center;
+    color: #6fa73f;
+    float: left;
+    width: 100%;
+    margin: 40px 0px;
+}
+.apps img {
+    width: 90px;
+    margin: 10px 0px 0px 0px;
+}
+.apps h4 {
+    font-weight: bold;
+    margin: 0px;
+}
+.abs {
+    position: absolute;
+    top: -40px;
+    right: 60px;
+    width: 170px;
+}
+/*.abs {
+    position: absolute;
+    top: -150px;
+    right: 50px;
+    width: 200px;
+}*/
+.abs img {
+    width: 100%;
+}
+.ai-pwr {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+}
+.ai-pwr h3 {
+    font-size: 20px;
+}
+.ai-pwr h3 span {
+    color: #6fa73f;
+}
+.error {
+    float: left;
+    width: 100%;
+    text-align: left;
+    color: red;
+}
+@media only screen and (max-width:767px) {
+.web-form {
+    float: left;
+    width: 100%;
+    background: black;
+    position: static;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.form input, .form textarea {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.form form .input {
+    margin: 5px 0px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+.head {
+    margin: 10px 0px;
+    padding: 0px 0px 0px 5px;
+}
+.head h3 {
+    margin: 0px;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    line-height: 20px;
+}
+.form {
+    width: 100%;
+    margin: 0% auto;
+    padding: 0px 0px;
+}
+.apps {
+    text-align: center;
+    color: #6fa73f;
+    float: left;
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+.abs {
+    position: static;
+    top: 0px;
+    right: 0px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+.abs img {
+    width: 100%;
+}
+}
+@media only screen and (min-width:768px) and (max-width:1023px) {
+.web-form {
+    float: left;
+    width: 100%;
+    background: black;
+    position: static;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+.form {
+    width: 100%;
+    margin: 0% auto;
+    padding: 0px 0px;
+}
+.border {
+    border: 2px solid #fff;
+    float: left;
+    width: 100%;
+    background: #808080;
+    margin: 0px 0px 0px 0px;
+}
+.abs {
+    position: absolute;
+    top: -150px;
+    right: 50px;
+    width: 180px;
+}
+.form form .input {
+    margin: 5px 0px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+}
+.form input, .form textarea {
+    padding: 5px 10px;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.abs {
+    position: absolute;
+    top: -150px;
+    right: 30px;
+    width: 200px;
+}
+.apps {
+    text-align: center;
+    color: #6fa73f;
+    float: left;
+    width: 100%;
+    margin: 60px 0px;
+}
+}
+@media only screen and (min-width:1024px) and (max-width:1279px) {
+.form {
+    width: 100%;
+    margin: 0% auto;
+    padding: 0% 0px;
+    height: 100%;
+}
+.form input, .form textarea {
+    padding: 6px 10px;
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.form form .input {
+    margin: 5px 0px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0px 30px;
+}
+.abs {
+    position: absolute;
+    top: -80px;
+    right: 50px;
+    width: 180px;
+}
+}
