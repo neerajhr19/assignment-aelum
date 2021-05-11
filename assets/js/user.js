@@ -28,13 +28,16 @@ function refreshCaptcha() {         // get and bind captcha to img tag
         type: "POST",
         url: baseUrl + "Web/refreshcapcha",
         success: function(resultFeed) {
-            console.log(resultFeed);
-            if (resultFeed.filename != "") {
-                $("#capimg").attr("src", resultFeed.newImage);
-                $("#capimg").css('display','inline');
-            } else {
-                return;
-            }
+            if(resultFeed.success==1){
+                if (resultFeed.data.filename != "") {
+                    $("#capimg").attr("src", resultFeed.data.newImage);
+                    $("#capimg").css('display','inline');
+                } else {
+                    alert('Error while creating captcha');
+                }
+            }else{
+                alert(resultFeed.message);
+            }            
         },
         error: function(err) {
             console.log(err);
@@ -124,6 +127,8 @@ function validate(){        // form validation
                     alert(json.message);
                     if(json.success==1){
                         window.location.reload();
+                    }else{
+                        refreshCaptcha();
                     }                    
                  },
                  error: function(e){

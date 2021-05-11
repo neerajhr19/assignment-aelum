@@ -40,16 +40,23 @@ class Web extends CI_Controller {
             )
         );
         $cap = create_captcha($vals);
-        $path = 'assets/captcha/' . $cap['filename'];
-        $type = pathinfo($path, PATHINFO_EXTENSION);
-        $data = file_get_contents($path);
-        $cap_image = 'data:image/' . $type . ';base64,' . base64_encode($data);
-        $cap['newImage']=$cap_image;
-        unlink('assets/captcha/' . $cap['filename']);
-		session_start();
-		$_SESSION['captcha_text'] = $cap['word'];
-        header('Content-type: application/json');
-        echo json_encode($cap);
+		if($cap){
+			$path = 'assets/captcha/' . $cap['filename'];
+			$type = pathinfo($path, PATHINFO_EXTENSION);
+			$data = file_get_contents($path);
+			$cap_image = 'data:image/' . $type . ';base64,' . base64_encode($data);
+			$cap['newImage']=$cap_image;
+			unlink('assets/captcha/' . $cap['filename']);
+			session_start();
+			$_SESSION['captcha_text'] = $cap['word'];
+			header('Content-type: application/json');
+			$response['success']=1;
+			$response['data']=$cap;		
+		}else{
+			$response['success']=0;
+			$response['message']='Please assign write permission to assets/captcha';
+		}
+        echo json_encode($response);
     }
 
 }
